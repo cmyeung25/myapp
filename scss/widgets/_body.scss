@@ -1,0 +1,17 @@
+body {
+  background-color: $body-background-color;
+  padding-top: 62px;
+}
+
+%content {
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+main .content {
+  @extend %content;
+  max-width: none;
+  padding: 40px;
+}

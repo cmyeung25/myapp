@@ -1,0 +1,25 @@
+$columns: 12;
+$index: 1;
+
+.row {
+
+  @include container;
+  margin: 20px 0;
+
+  .columns,
+  .column {
+
+    @while $index <= $columns {
+
+      &.large-#{$index} {
+        @include span($index of $columns);
+
+        &.last {
+          @include span($index of $columns last);
+        }
+      }
+
+      $index: $index + 1;
+    }
+  }
+}

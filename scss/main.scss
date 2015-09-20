@@ -1,32 +1,24 @@
-body {
-  margin: 0;
-}
+// import file here
 
-header {
+@import "bower_components/susy/sass/susy";
 
-  padding: 1px 0;
-  background-color: cornflowerblue;
+// config
+@import 'config/color';
+@import 'config/base';
+@import 'config/normalize';
 
-}
+// Helper
 
-#main-menu {
+@import 'helper/clearfix';
 
-  padding: 20px 0;
 
-  ul {
+// atom
 
-    padding: 1px 0;
-    max-width: 1200px;
-    overflow: hidden;
+@import 'atom/typography';
 
-    list-style: none;
-    margin: 0 auto;
+// Widget
 
-    li {
-
-      float: left;
-      margin: 10px;
-
-    }
-  }
-}
+@import 'widgets/body';
+@import 'widgets/grid';
+@import 'widgets/main-menu';
+@import 'widgets/card';

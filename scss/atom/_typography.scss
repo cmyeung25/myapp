@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+
+p {
+  font-size: 1.6rem;
+
+  &.lede {
+    font-size: 2.0rem;
+    line-height: 30px;
+  }
+}
+
+a {
+  font-size: 1.6rem;
+  color: $base-text-color;
+  text-decoration: none;
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
